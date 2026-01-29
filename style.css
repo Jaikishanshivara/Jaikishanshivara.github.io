@@ -107,3 +107,33 @@ h2::after {
     text-decoration: none;
     margin: 0 10px;
 }
+/* ===== TEXT + IMAGE SECTION ===== */
+.text-image {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.text-image .text {
+    flex: 1;
+}
+
+.text-image .image {
+    flex: 1;
+    text-align: center;
+}
+
+.text-image img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+@media (max-width: 768px) {
+    .text-image {
+        flex-direction: column;
+        text-align: center;
+    }
+}
